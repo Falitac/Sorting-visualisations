@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Wizualizacja algorytmów sortujących</title>
+</head>
+<body>
+	<main>
+		<div id="parameters">
+			<h1>Algorytmy sortujące, wizualizacja</h1>
+			<p>Opóźnienie kroku <span id="step-time">40</span>ms</p><input class="slider" id="step-time-slider" type="range" name="step-time" value=2000 min="0" max="10000">
+			<p>N = <span id="amount-of-data">100</span></p><input class="slider" id="amount-data-slider" type="range" name="step-time" value=100 min="0" max="1000" onchange="dataAmountChange()">
+		</div>
+		<canvas id="canvas" width="1280" height="1280">Kanwa nie ma</canvas>
+	</main>
+	<script src="canvas.js"></script>
+</body>
+</html>
